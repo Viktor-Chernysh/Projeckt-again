@@ -295,6 +295,9 @@ img {
   color: var(--secondary-text-color);
 }
 /* Чем мы занимаемся work */
+.work-container {
+  padding-top: 0;
+}
 
 /* Наша команда team */
 .team-section {
