@@ -202,11 +202,6 @@ img {
 
 /* Герой */
 
-.hero-section {
-  /* max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto; */
-}
 .hero-container {
   max-width: 1600px;
   margin-left: auto;
@@ -295,7 +290,7 @@ img {
   color: var(--secondary-text-color);
 }
 /* Чем мы занимаемся work */
-.work-container {
+.work-section {
   padding-top: 0;
 }
 
@@ -444,6 +439,7 @@ img {
 }
 .footer-title-connect {
   font-weight: 700;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
