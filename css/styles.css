@@ -408,8 +408,6 @@ img {
 
 /* Футер */
 .footer-container {
-  display: flex;
-  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -452,14 +450,14 @@ footer .social-icons-link:focus {
 .footer .social-icons-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-grid {
+.flexbox {
   display: flex;
-  margin-left: -30px;
+  justify-content: space-between;
 }
-.footer-grid-item {
-  width: calc((50% - 30px * 2) / 2);
-  margin-left: 30px;
+.content-box {
+  flex-basis: calc((100% - 30px) / 2);
 }
-.footer-grid-item.large {
-  flex-grow: 1;
+.flexbox.content-box {
+  display: flex;
+  align-items: baseline;
 }
