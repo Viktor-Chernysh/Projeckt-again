@@ -12,11 +12,12 @@
 </head>
 <body>
   <!-- Хэдэр -->
-  <header class="header">
-    <!-- Логотип  -->
+  <header class="header"> 
     <div class="container header-container">
+      <!-- Логотип  -->
       <a href="./index.html" class="link logo" aria-label="логотип webstudio"
       ><span class="web-logo">Web</span>Studio</a>
+      
       <nav class="site-nav">
         <ul class="list menu">
         <li class="menu-item">
@@ -26,7 +27,7 @@
           <a href="./portfolio.html" class="link menu-link link-changing">Портфолио</a>
         </li>
         <li class="menu-item">
-          <a href="" class="link menu-link link-changing">Контакты</a>
+          <a href="#address" class="link menu-link link-changing" >Контакты</a>
         </li>
         </ul>
       </nav>
@@ -55,7 +56,7 @@
     <section class="hero-section">
       <div class="hero-container  dark-bgc">
         <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-button" type="button" aria-label="кнопка Заказать услугу">Заказать услугу</button>
+        <button class="hero-button" type="button" aria-label="кнопка Заказать услугу" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <!-- Приимущества advantages -->
@@ -86,15 +87,18 @@
     <section class="section work-section">
       <div class="container">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="list grid">
+        <ul class="list grid about-work">
           <li class="item grid-item">
             <img src="./images/about-work/img.jpg" width="370" height="294" alt="пример работы- програмарование">
+            <p>Десктопные приложения</p>
           </li>
           <li class="item grid-item">
             <img src="./images/about-work/img-1.jpg" width="370" height="294" alt="пример работы- дизайн">
+            <p>Мобильные приложения</p>
           </li>
           <li class="item grid-item">
             <img src="./images/about-work/img-2.jpg" width="370" height="294" alt="пример работы- работа с цветом">
+            <p>Дизайнерские решения</p>
           </li>
         </ul>
       </div>
@@ -320,7 +324,7 @@
           <a href="./index.html" class="link dark-logo">
             <span class="web-logo">Web</span>Studio
           </a>
-          <address class="address">
+          <address class="address" id="address">
             <ul class="list address-list">
               <li class="item">
                 <a href="https://goo.gl/maps/BqRFoX4zjeefGf4j7" class="link address-link" target="_blank" rel="noopener noreferrer">г. Киев,
@@ -375,6 +379,16 @@
       </div>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+      <button class="btn-close" data-modal-close>
+        <svg class="close-black" width="18" height="18">
+          <use href="./images/icons/sprite1.svg#icon-close-black"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <script src="./js/modal.js"></script>
  
 </body>
 </html>
